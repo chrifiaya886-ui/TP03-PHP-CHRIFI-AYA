@@ -1,6 +1,6 @@
 <?php
 /*
-   Auteur : Khadija BOUYAKHSAINE
+   Auteur : aya chrifi 
    Objectif : Exercices Partie 1 - Bases, Types, Constantes et Chaînes
    Date : 14/10/2026
 */
@@ -11,9 +11,7 @@ include 'includes/menu_inc.php';
 
 echo "<h2>Partie 1 : Variables, constantes, types et chaînes</h2>";
 
-// ==========================================
-// 1.1 Noms de variables
-// ==========================================
+
 echo "<h3>1.1 Noms de variables</h3>";
 
 /* 
@@ -47,9 +45,6 @@ echo "La variable \$A est : " . $A . "<br>";
 echo "Démonstration : \$a et \$A sont deux variables distinctes.<br>";
 
 
-// ==========================================
-// 1.2 Constantes
-// ==========================================
 echo "<h3>1.2 Constantes</h3>";
 
 echo ETABLISSEMENT . " : notes de " . NOTE_MIN . " à " . NOTE_MAX . ", seuil " . SEUIL . "<br>";
@@ -60,9 +55,6 @@ var_dump(defined('INCONNUE'));
 echo "<br>";
 
 
-// ==========================================
-// 1.3 Calcul
-// ==========================================
 echo "<h3>1.3 Calcul</h3>";
 
 $prix_ht = 60;
@@ -72,9 +64,6 @@ $prix_ttc = $prix_ht * (1 + $tva / 100);
 echo "Le prix TTC du produit est de " . $prix_ttc . " €.<br>";
 
 
-// ==========================================
-// 1.4 Types et conversions
-// ==========================================
 echo "<h3>1.4 Types et conversions</h3>";
 
 $test = 42;
@@ -89,9 +78,6 @@ echo decoct($nombre); echo '<br>'; // Octal
 echo decbin($nombre); echo '<br>'; // Binaire
 
 
-// ==========================================
-// 1.5 Chaînes de caractères
-// ==========================================
 echo "<h3>1.5 Chaînes de caractères</h3>";
 
 $traitees = "égales à";
@@ -103,12 +89,12 @@ echo '3. Ceci n\'affichera pas \n de nouvelle ligne<br>';
 echo '4. Les variables ne seront pas $traitees $ici<br>';
 echo "5. Les variables seront $traitees $ici<br>";
 
-// Retirer les * avec trim()
+
 $ch = "*Bonjour les développeurs*";
 $ch = trim($ch, "*");
 echo $ch . "<br>";
 
-// Afficher chaque lettre sur une ligne différente avec for
+
 for ($i = 0; $i < strlen($ch); $i++) {
     echo $ch[$i] . "<br>";
 }
